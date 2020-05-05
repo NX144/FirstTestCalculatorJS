@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <input type="text" class="output" placeholder="0" >
+    <div class="elem" onclick="clearInput();">AС</div>
+    <div class="elem" onclick="insertElem('(');">(</div>
+    <div class="elem" onclick="insertElem(')');">)</div>
+    <div class="elem elem-yellow" onclick="clearOneElem();">&lArr;</div>
+    <div class="elem" onclick="insertElem('7');">7</div>
+    <div class="elem" onclick="insertElem('8');">8</div>
+    <div class="elem" onclick="insertElem('9');">9</div>
+    <div class="elem elem-yellow shareBtn" onclick="insertElem('/');">&divide;</div>
+    <div class="elem" onclick="insertElem('4');">4</div>
+    <div class="elem" onclick="insertElem('5');">5</div>
+    <div class="elem" onclick="insertElem('6');">6</div>
+    <div class="elem elem-yellow multiplyBtn" onclick="insertElem('*');">&times;</div>
+    <div class="elem" onclick="insertElem('1');">1</div>
+    <div class="elem" onclick="insertElem('2');">2</div>
+    <div class="elem" onclick="insertElem('3');">3</div>
+    <div class="elem elem-yellow minusBtn" onclick="insertElem('-');">-</div>
+    <div class="elem" onclick="insertElem('.');">.</div>
+    <div class="elem" onclick="insertElem('0');">0</div>
+    <div class="elem" onclick="mathOperation();">=</div>
+    <div class="elem elem-yellow plusBtn" onclick="insertElem('+');">+</div>
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
